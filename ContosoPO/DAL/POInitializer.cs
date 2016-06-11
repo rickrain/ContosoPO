@@ -60,6 +60,7 @@ namespace ContosoPO.DAL
             {
                 new LineItem
                 {
+                    LineItemID = 2001,
                     PurchaseOrderID = 1001,
                     Name = "Laptop computer",
                     Quantity = 13,
@@ -67,6 +68,7 @@ namespace ContosoPO.DAL
                 },
                 new LineItem
                 {
+                    LineItemID = 2002,
                     PurchaseOrderID = 1001,
                     Name = "LCD Monitor",
                     Quantity = 9,
@@ -74,6 +76,7 @@ namespace ContosoPO.DAL
                 },
                 new LineItem
                 {
+                    LineItemID = 2003,
                     PurchaseOrderID = 1001,
                     Name = "HDMI Cable",
                     Quantity = 9,
@@ -81,6 +84,7 @@ namespace ContosoPO.DAL
                 },
                 new LineItem
                 {
+                    LineItemID = 2004,
                     PurchaseOrderID = 1001,
                     Name = "PowerShell Script",
                     Quantity = 1,
@@ -88,6 +92,7 @@ namespace ContosoPO.DAL
                 },
                 new LineItem
                 {
+                    LineItemID = 2005,
                     PurchaseOrderID = 1001,
                     Name = "Azure Resource Manager Template",
                     Quantity = 1,

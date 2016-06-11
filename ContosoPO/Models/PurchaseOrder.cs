@@ -25,7 +25,6 @@ namespace ContosoPO.Models
 
         public virtual Employee Owner { get; set; }
 
-        //public virtual ICollection<LineItem> LineItems { get; set; }
-
+        public virtual ICollection<LineItem> LineItems { get; set; }
     }
 }

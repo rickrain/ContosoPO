@@ -18,7 +18,7 @@ namespace ContosoPO.Models
         [StringLength(15)]
         public string LastName { get; set; }
 
-        [StringLength(25)]
+        [StringLength(40)]
         [DataType(DataType.EmailAddress)]
         public object Email { get; set; }
 
