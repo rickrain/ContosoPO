@@ -9,7 +9,6 @@ namespace ContosoPO.Models
 {
     public class LineItem
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int LineItemID { get; set; }
 
         public int PurchaseOrderID { get; set; }

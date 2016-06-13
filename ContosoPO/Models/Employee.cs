@@ -9,7 +9,6 @@ namespace ContosoPO.Models
 {
     public class Employee
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int EmployeeID { get; set; }
 
         [StringLength(15)]

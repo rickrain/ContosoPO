@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ContosoPO.Models.PurchaseOrder>
+
+@{
+    var index = 0;
+}
+
+<h2>My Purchase Orders</h2>
+
+<div class="panel-group" id="accordion">
+
+    @foreach (var po in Model)
+    {
+        var panelId = string.Format("panel{0}", index++);
+        var hrefPanelId = "#" + panelId;
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="@hrefPanelId">
+                        @po.Title
+                    </a>
+                </h4>
+            </div>
+
+            <div id="@panelId" class="panel-collapse collapse">
+                <ul class="list-group">
+                    @foreach (var item in po.LineItems)
+                    {
+                        <li class="list-group-item">
+                            @item.Name @item.Quantity @item.UnitPrice
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    }
+</div>

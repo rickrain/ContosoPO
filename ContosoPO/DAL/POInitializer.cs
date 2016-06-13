@@ -18,14 +18,12 @@ namespace ContosoPO.DAL
             {
                 new Employee
                 {
-                    EmployeeID = 301,
                     FirstName = "John",
                     LastName = "Doe",
                     Email = "john.doe@contoso.com"
                 },
                 new Employee
                 {
-                    EmployeeID = 512,
                     FirstName = "Clark",
                     LastName = "Griswold",
                     Email = "clark.griswold@contoso.com"
@@ -38,15 +36,13 @@ namespace ContosoPO.DAL
             var purchaseOrders = new List<PurchaseOrder>
             {
                 new PurchaseOrder {
-                    PurchaseOrderID = 1001,
-                    EmployeeID = 301,
+                    EmployeeID = 1,
                     Title ="Finance dept. hardware refresh",
                     StartDate = DateTime.Parse("2016-07-01"),
                     EndDate = DateTime.Parse("2016-09-01")
                 },
                 new PurchaseOrder {
-                    PurchaseOrderID = 1002,
-                    EmployeeID = 512,
+                    EmployeeID = 2,
                     Title ="Azure Essentials Development - Phase 1",
                     StartDate = DateTime.Parse("2016-07-01"),
                     EndDate = DateTime.Parse("2016-09-01")
@@ -60,43 +56,38 @@ namespace ContosoPO.DAL
             {
                 new LineItem
                 {
-                    LineItemID = 2001,
-                    PurchaseOrderID = 1001,
+                    PurchaseOrderID = 1,
                     Name = "Laptop computer",
                     Quantity = 13,
                     UnitPrice = 1302.94
                 },
                 new LineItem
                 {
-                    LineItemID = 2002,
-                    PurchaseOrderID = 1001,
+                    PurchaseOrderID = 1,
                     Name = "LCD Monitor",
                     Quantity = 9,
                     UnitPrice = 201.45
                 },
                 new LineItem
                 {
-                    LineItemID = 2003,
-                    PurchaseOrderID = 1001,
+                    PurchaseOrderID = 1,
                     Name = "HDMI Cable",
                     Quantity = 9,
                     UnitPrice = 19.99
                 },
                 new LineItem
                 {
-                    LineItemID = 2004,
-                    PurchaseOrderID = 1001,
+                    PurchaseOrderID = 2,
                     Name = "PowerShell Script",
-                    Quantity = 1,
+                    Quantity = 3,
                     UnitPrice = 1200.00
                 },
                 new LineItem
                 {
-                    LineItemID = 2005,
-                    PurchaseOrderID = 1001,
+                    PurchaseOrderID = 2,
                     Name = "Azure Resource Manager Template",
-                    Quantity = 1,
-                    UnitPrice = 549.00
+                    Quantity = 5,
+                    UnitPrice = 920.00
                 }
             };
             lineItems.ForEach(li => context.LineItems.Add(li));

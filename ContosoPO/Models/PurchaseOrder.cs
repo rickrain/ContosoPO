@@ -9,7 +9,6 @@ namespace ContosoPO.Models
 {
     public class PurchaseOrder
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int PurchaseOrderID { get; set; }
 
         public int EmployeeID { get; set; }
